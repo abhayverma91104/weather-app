@@ -1,4 +1,4 @@
-const apiKey = '63bfdd6553f3b86434205756b5e0ac88';
+const apiKey = 'YOUR-API-KEY';
 const btn = document.getElementById('get-location');
 const status = document.getElementById('status');
 const display = document.getElementById('weather-display');
@@ -26,7 +26,7 @@ async function fetchWeather(lat, lon) {
     try {
         const response = await fetch(url);
         
-        // This will tell us if the API key is the problem
+        
         if (!response.ok) {
             const errorData = await response.json();
             console.error("API Error:", errorData);
@@ -53,7 +53,7 @@ function displayData(data) {
 
     // Dynamic UI logic
     const body = document.body;
-    const icon = data.weather[0].icon; // OpenWeather provides icons like '01d' (day) or '01n' (night)
+    const icon = data.weather[0].icon; 
 
     if (icon.includes('n')) {
         // Night Mode: Deep Black / Charcoal
