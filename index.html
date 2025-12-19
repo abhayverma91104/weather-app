@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER/CORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="app">
+        <header>
+            <button id="get-location">SYNC LOCATION</button>
+            <div id="status">IDLE</div>
+        </header>
+
+        <section id="weather-display" class="hidden">
+            <h1 id="temp">--°</h1>
+            <div class="meta">
+                <div class="location-box">
+                    <span class="label">LOCATION</span>
+                    <span id="city">---</span>
+                </div>
+                <div class="desc-box">
+                    <span id="description">---</span>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid-item">
+                    <span class="label">HUMIDITY</span>
+                    <span id="humidity">--</span>%
+                </div>
+                <div class="grid-item">
+                    <span class="label">WIND</span>
+                    <span id="wind">--</span> <small>KM/H</small>
+                </div>
+            </div>
+        </section>
+        
+        <div id="error-msg"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
