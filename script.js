@@ -1,4 +1,4 @@
-const apiKey = '63bfdd6553f3b86434205756b5e0ac88';
+const apiKey = 'YOUR-API-KEY';
 const btn = document.getElementById('get-location');
 const unitBtn = document.getElementById('unit-toggle');
 const status = document.getElementById('status');
