@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <main id="app">
         <header>
-            <button id="get-location">SYNC LOCATION</button>
+            <div class="controls">
+                <button id="get-location"> SYNC LOCATION</button>
+                <button id="unit-toggle" data-unit="metric">°C</button>
+            </div>
             <div id="status">IDLE</div>
         </header>
 
@@ -19,6 +21,7 @@
             <div class="meta">
                 <div class="location-box">
                     <span class="label">LOCATION</span>
+                    <input type="text" id="city-search" placeholder="ENTER CITY..." class="hidden">
                     <span id="city">---</span>
                 </div>
                 <div class="desc-box">
@@ -33,7 +36,7 @@
                 </div>
                 <div class="grid-item">
                     <span class="label">WIND</span>
-                    <span id="wind">--</span> <small>KM/H</small>
+                    <span id="wind">--</span> <small id="wind-unit">KM/H</small>
                 </div>
             </div>
         </section>
